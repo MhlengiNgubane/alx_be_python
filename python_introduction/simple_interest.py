@@ -1,7 +1,7 @@
-principal = 1000
-rate = 0.05
-time = 3
+P = 1000
+R = 0.05
+T = 3
 
-simple_interest = (principal * rate * time)
+I = (P * R * T)
 
-print(f"Simple interest is : {simple_interest:.1f}")
+print(f"Simple interest is : {I:.1f}")

@@ -2,5 +2,5 @@ number = int(input("Enter a number to see its multiplication table: "))
 
 for i in range(1, 11):
     result = number * i
-   
-    print "%d * %d = %d" % (number, i, number * i)
+    print(  number , " x ", i, " = ", result)
+    

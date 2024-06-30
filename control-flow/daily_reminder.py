@@ -13,7 +13,7 @@ match priority:
         reminder = f"'{task}' has an unspecified priority"
 
 
-if time_bound.lower() == "yes":
+if time_bound == "yes":
     reminder += " that requires immediate attention today!"
 
 print("Reminder: ", reminder)

@@ -1,5 +1,4 @@
-from explore_datetime import datetime
-
+import datetime 
 
 def display_current_datetime():
     current_date = datetime.datetime.now()
@@ -16,10 +15,10 @@ def calculate_future_date():
     except ValueError:
         print("Invalid input. Please enter a valid integer number of days.")
 
-# Main function to run the program
 def main():
     display_current_datetime()
     calculate_future_date()
 
 if __name__ == "__main__":
     main()
+

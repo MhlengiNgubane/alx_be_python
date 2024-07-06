@@ -10,6 +10,9 @@ def convert_to_fahrenheit(celsius):
     return fahrenheit
 
 def main():
+    global FAHRENHEIT_TO_CELSIUS_FACTOR
+    global CELSIUS_TO_FAHRENHEIT_FACTOR
+    
     while True:
         try:
             temperature = float(input("Enter the temperature to convert: "))

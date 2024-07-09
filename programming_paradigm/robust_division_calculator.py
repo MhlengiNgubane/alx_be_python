@@ -1,7 +1,7 @@
-def safe_divide(numerator, denominator):
+def safe_divide(self, numerator, denominator):
     try:
-        numerator = float(numerator)
-        denominator = float(denominator)
+        self.numerator = float(numerator)
+        self.denominator = float(denominator)
         
         result = numerator / denominator
         

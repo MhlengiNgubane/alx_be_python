@@ -19,5 +19,10 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(1, 1), 0)
         self.assertEqual(self.calc.subtract(-5, 2), -3)    
         
+    def test_multiplication(self):
+        """Test the multiply method."""
+        self.assertEqual(self.calc.multiply(3, 2), 6)
+        self.assertEqual(self.calc.multiply(1, -1), -1)
+        self.assertEqual(self.calc.multiply(5, 0), 0)    
 
 # Remember to write additional test methods for subtract, multiply, and divide.

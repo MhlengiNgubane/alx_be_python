@@ -18,16 +18,17 @@ class Library:
         self.books = []
 
     def add_book(self, book):
-        self.books.append(book)
+        if isinstance(book, (Book, EBook, PrintBook)):
+            self.books.append(book)
+        else:
+            print("Invalid book type. Could not add to library.")
 
     def list_books(self):
         for book in self.books:
             if isinstance(book, Book):
-                print(f"Title: {book.title}, Author: {book.author}")
+                print(f"Book: {book.title} by {book.author}")
             elif isinstance(book, EBook):
-                print(f"EBook - Title: {book.title}, Author: {book.author}, File Size: {book.file_size}")
+                print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}KB")
             elif isinstance(book, PrintBook):
-                print(f"PrintBook - Title: {book.title}, Author: {book.author}, Page Count: {book.page_count}")
-            else:
-                print("Invalid book type")
+                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
                 
